@@ -6,11 +6,17 @@ module.exports = {
     main: './src/index.js',
     vendor: './src/vendor.js'
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
-        test:/\.js$/,
+        test:/\.jsx?$/,
         use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/
       },
       {
@@ -26,6 +32,9 @@ module.exports = {
         use: 'file-loader'
       }
     ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   plugins: [
     new HtmlWebpackPlugin({

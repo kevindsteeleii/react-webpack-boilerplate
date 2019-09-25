@@ -11,7 +11,6 @@ module.exports = merge( common, {
     port: 3000,
     historyApiFallback: true,
   },  
-  devtool: 'inline-source-map',
   plugins: [ 
     new Webpack.HotModuleReplacementPlugin()
   ]
