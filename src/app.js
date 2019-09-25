@@ -1,13 +1,17 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
+import About from './about';
 import './app.scss';
-const logo = require('./public/imgs/webpack.png')
+const logo = require('./public/imgs/webpack.png');
+
 const App = () => {
   return(<div>
     <h1>Welcome to Webpack and React!!!</h1>
-    <p></p>
     <img src={logo} alt="webpack-logo"/>
+    <Link to="/about">About stuff</Link>
     </div>)
 }
 
-render(<App/>, document.getElementById('app'));
+export default App;
+
+// render(<App/>, document.getElementById('app'));

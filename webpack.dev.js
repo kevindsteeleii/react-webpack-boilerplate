@@ -4,9 +4,15 @@ const common = require('./webpack.common');
 const path = require('path');
 
 module.exports = merge( common, {
+  output: {
+    publicPath: '/',
+  },
   devServer: {
     port: 3000,
-    contentBase: path.join(__dirname, './src/public')
+    historyApiFallback: true,
   },  
-  plugins: [ new Webpack.HotModuleReplacementPlugin() ]
+  devtool: 'inline-source-map',
+  plugins: [ 
+    new Webpack.HotModuleReplacementPlugin()
+  ]
 });
