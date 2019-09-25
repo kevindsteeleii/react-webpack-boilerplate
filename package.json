@@ -1,0 +1,49 @@
+{
+  "name": "react-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A webpack run react boilerplate.",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindsteeleii/react-webpack-boilerplate.git"
+  },
+  "author": "Kevin D. Steele II",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevindsteeleii/react-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kevindsteeleii/react-webpack-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-destructuring": "^7.6.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/plugin-transform-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
